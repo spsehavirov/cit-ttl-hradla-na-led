@@ -1,0 +1,46 @@
+\documentclass[border=0.2cm]{standalone}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{siunitx}
+
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing,angles,quotes}
+
+\begin{document}
+
+\ctikzset {
+    logic ports=european,
+    logic ports/scale=1.0,
+    tripoles/european not symbol=ieee circle,
+    resistors/scale=0.7,
+    capacitors/scale=0.6,
+    diodes/scale=0.6,
+}
+
+\begin{circuitikz}[european, straight voltages]
+    \draw (0,0) node[american buffer port] (buf) {};
+    \draw (buf.in) to[short, -o] ++(-0.25, 0);
+
+    \draw (buf) to[short, -*] ++(1, 0) coordinate (j0);
+    \draw (j0)  -- ++(0, -2) to[short, -o] ++(4, 0) node[above] {$Y$};
+
+    \draw (j0) ++(2.5, 0) node[npn, tr circle] (npn) {};
+    \draw (j0) -- ++(0.5, 0) to[R, l=$R_B$] (npn.B);
+
+    \draw (j0) -- ++(0,2) coordinate (Rp);
+    \draw (Rp) to[R, l=$R_P$] ++(0, 2) to[short, -o] coordinate (U_CC) ++(0, .25) node[above] (pwr){$U_{CC}$};
+    
+    \draw (npn.E) -- ++(0, -0.5) node[rground] {};
+    \draw (npn.C |- U_CC) coordinate (U_B) node[above] {$U_{B}$};
+    \draw (npn.C |- Rp) coordinate (Rmirror) -- (npn.C);
+
+    \draw (Rmirror) to[leD-, diodes/scale=0.6, led arrows from anode] (npn.C);
+    \draw (U_B) to[short, o-] ++(0, -0.25) to[R, l_=$R$] (Rmirror);
+\end{circuitikz}
+\end{document}
+ 

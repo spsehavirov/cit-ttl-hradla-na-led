@@ -4,9 +4,9 @@
 
 |          |                            |                  |                        |
 |----------|----------------------------| :--------------: |------------------------|
-| Log. `0` | [Zapojení I.](#zapojeni-i) | **ANO**</br> Odebíraný proud musí být nižší než $I_{VÝST}$ v log. `0` a proud diody. | $R = \frac{U_{CC} -(U_{DD} + U_{VÝST_{LOG. 0}})}{I_D}$ |
-| Log. `1` | [Zapojení II.](#zapojeni-ii) | **NE**</br> Proud diodyje vždy vyšší než $I_{VÝST}$ v log. `1`. | $R = \frac{U_{VÝST_{LOG. 1}} -U_{DD}}{I_D}$ |
-| Log. `1` | [Zapojení III.](#zapojeni-iii)  | **NE**</br> Napětí diody je vždy nižší než $U_{VÝST}$ v log. `1`. | $R = \frac{U_{CC}-U_{DD}}{I_D}$ |
+| Log. `0` | [Zapojení I.](#zapojení-i) | **ANO**</br> Odebíraný proud musí být nižší než $I_{VÝST}$ v log. `0` a proud diody. | $R = \frac{U_{CC} -(U_{DD} + U_{VÝST_{LOG. 0}})}{I_D}$ |
+| Log. `1` | [Zapojení II.](#zapojení-ii) | **NE**</br> Proud diodyje vždy vyšší než $I_{VÝST}$ v log. `1`. | $R = \frac{U_{VÝST_{LOG. 1}} -U_{DD}}{I_D}$ |
+| Log. `1` | [Zapojení III.](#zapojení-iii)  | **NE**</br> Napětí diody je vždy nižší než $U_{VÝST}$ v log. `1`. | $R = \frac{U_{CC}-U_{DD}}{I_D}$ |
 
 ## Zapojení s tranzistorem
 

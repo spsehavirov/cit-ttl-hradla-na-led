@@ -14,8 +14,8 @@
 |----------------------------| :--------------: |------------------------|
 |  [Zapojení s tranzistorem I.](#zapojení-s-tranzistorem-i)   | **ANO**</br> Odebíraný proud musí být nižší než rozdíl $I_{VÝST}$ v log. `1` a proud báze. | $R_B = \frac{h_{21}(U_{VÝST_{LOG. 1}} -0.7)}{I_D}$ <br /> $R = \frac{U_B-(U_D + 0.2)}{I_D}$ <br /> $R_P$ je nutný pro výstup s otevřeným kolektorem. |
 | [Zapojení s tranzistorem II.](#zapojení-s-tranzistorem-ii)  | **ANO**</br> Odebíraný proud musí být nižší než rozdíl $I_{VÝST}$ v log. `1` a proud báze. | $R_B = \frac{h_{21}(U_{VÝST_{LOG. 1}} -0.7)}{I_D}$ <br /> $R = \frac{U_D-U_B)}{I_D}$ <br /> $R_P$ je nutný pro výstup s otevřeným kolektorem. |
-| [Zapojení s tranzistorem II.](#zapojení-s-tranzistorem-iii) | **ANO**</br> Odebíraný proud musí být nižší než rozdíl $I_{VÝST}$ v log. `1` a proud báze. | $R = \frac{h_{21}(U_{VÝST_{LOG. 1}} -0.7)}{I_D}$ <br /> Pokud je $h_{21} > 100$ <br /> $R_P$ je nutný pro výstup s otevřeným kolektorem. |
-| [Zapojení s tranzistorem II.](#zapojení-s-tranzistorem-iv)  | **ANO**</br> Odebíraný proud musí být nižší než rozdíl $I_{VÝST}$ v log. `1` a proud báze. | $R = \frac{h_{21}(U_{VÝST_{LOG. 1}} -(U_B-0.7)}{I_D}$ <br /> Pokud je $h_{21} > 100$ <br /> $R_P$ je nutný pro výstup s otevřeným kolektorem. |
+| [Zapojení s tranzistorem III.](#zapojení-s-tranzistorem-iii) | **ANO**</br> Odebíraný proud musí být nižší než rozdíl $I_{VÝST}$ v log. `1` a proud báze. | $R = \frac{h_{21}(U_{VÝST_{LOG. 1}} -0.7)}{I_D}$ <br /> Pokud je $h_{21} > 100$ <br /> $R_P$ je nutný pro výstup s otevřeným kolektorem. |
+| [Zapojení s tranzistorem IV.](#zapojení-s-tranzistorem-iv)  | **ANO**</br> Odebíraný proud musí být nižší než rozdíl $I_{VÝST}$ v log. `1` a proud báze. | $R = \frac{h_{21}(U_{VÝST_{LOG. 1}} -(U_B-0.7)}{I_D}$ <br /> Pokud je $h_{21} > 100$ <br /> $R_P$ je nutný pro výstup s otevřeným kolektorem. |
 
  
 
